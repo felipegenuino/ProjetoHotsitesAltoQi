@@ -1,1 +1,3 @@
-# ProjetoHotsitesAltoQi
+# Projeto Hotsites AltoQi
+
+## Dependências
