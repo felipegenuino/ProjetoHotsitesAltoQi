@@ -1,4 +1,4 @@
-/*  
+/*
     #1 inicialização dos scripts do foundation
     #2 Google Analytics
     #3 Show/Hide menu para celular
@@ -7,7 +7,7 @@
 */
 
 
- 
+
 
 
 /* |||||||||||||| #1 initi foundation ||||||||||||||  */
@@ -90,4 +90,28 @@
     });
  /* |||||||||||||| #5 Smooth Scrolling ||||||||||||||  */
 
- 
+
+
+
+
+ /* |||||||||||||| #4  bug de visualização do youtube ||||||||||||||  */
+      $('.owl-carousel-single').owlCarousel({
+    //loop:true,
+    margin:10,
+    //nav:true,
+		lazyLoad:true,
+		lazyContent: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+/* ||||||||||||||  bug de visualização do youtube||||||||||||||  */

@@ -23,6 +23,10 @@
 .debug{ }
 
 
+
+ 
+
+
 body{ font-family: 'Titillium Web', sans-serif; font-weight: 400; background-color: #FFF;     height: 100%; }
 
 h1, h2, h3, h4, h5, h6{ font-family: 'Titillium Web', sans-serif; font-weight: 400; letter-spacing: -1px; color: inherit; }
@@ -51,6 +55,9 @@ p.wp-caption-text{ font-size:80%; padding:.3em 0 .1em 0; color:#ccc; }
 *[data-reveal-id]  { cursor: pointer;}
 
 figure { margin: 0;}
+
+
+
 
 
 

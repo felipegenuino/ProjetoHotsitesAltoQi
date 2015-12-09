@@ -202,7 +202,18 @@ if ( ! function_exists( 'theme_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_register_script( 'foundation', get_template_directory_uri() . '/assets/js/foundation.min.js', array('jquery'), '5.5.2', true );
 
+	wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.carousel.css' );
+	wp_enqueue_style( 'owl-carousel-theme-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.theme.default.min.css' );
+
+ 	wp_register_script( 'owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel2/owl.carousel.min.js', array('jquery'), '5.5.2', true );
+
+
+
+
 	wp_register_script( 'skrollr', get_template_directory_uri() . '/assets/libs/skrollr/skrollr.min.js', array('jquery'), '5.5.2', true );
+
+
+
 	wp_register_script( 'app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '5.5.2', true );
 
 
@@ -212,6 +223,7 @@ if ( ! function_exists( 'theme_scripts' ) ) :
 	wp_enqueue_script( 'jquery' );
 	//wp_enqueue_script( 'skrollr' );
 	wp_enqueue_script( 'foundation' );
+	wp_enqueue_script( 'owl-carousel' );
 	wp_enqueue_script( 'app' );
 
 	}
@@ -591,6 +603,7 @@ add_filter('upload_mimes', 'cc_mime_types');
         <?php endif;
     }
 
+/* ||||||||||||||||||| END REGISTRA FUNÇÕS DO VIDEO |||||||||||||||||||  */ ?>
 
 
 
@@ -600,5 +613,54 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 
 
-/* ||||||||||||||||||| END REGISTRA FUNÇÕS DO VIDEO |||||||||||||||||||  */
-?>
+
+
+
+
+
+
+<?php  /* ||||||||||||||||||| REGISTRA FUNÇÕES RECURSOS |||||||||||||||||||  */
+
+function blockResourceBackgroundType() {
+	if ( !empty(get_sub_field('acf_block_resource__type_layout')) ) 	{
+		echo get_sub_field('acf_block_resource__type_layout');
+	} else { echo "section-light"; }
+}
+
+
+
+function resourceCustomBackground() {
+	$acfBlockResourceCustomBackground = get_sub_field('acf_block_resource__custom_background');
+	$acfBlockResourceCustomBackgroundColor = get_sub_field('acf_block_resource__custom_background_color');
+	$acfBlockResourceCustomBackgroundImage = get_sub_field('acf_block_resource__custom_background_image');
+	 if( !empty($acfBlockResourceCustomBackground) ): ?>
+			style="background: <?php echo $acfBlockResourceCustomBackgroundColor; ?> url(<?php echo $acfBlockResourceCustomBackgroundImage; ?>) ; "
+	 <?php endif;
+}
+
+
+
+function blockResourceTitle() {
+	$acfBlockResourceTitle = get_sub_field('acf_block_resource__title');
+		if( !empty($acfBlockResourceTitle) ): ?>
+		<h2 class="section__title--secondary"> <?php echo $acfBlockResourceTitle; ?> 	</h2>
+ 		<?php endif;
+}
+
+/*
+function blockResourceListResourceVideoCarosel() {
+	$acfBlockResourceListResourceVideo = get_sub_field('acf_block_resource__list_resource__video');
+		if( !empty($acfBlockResourceListResourceVideo) ): ?>
+		<h2 class="section__title--secondary"> <?php echo $acfBlockResourceListResourceVideo; ?> 	</h2>
+ 		<?php endif;
+}
+
+*/
+
+
+
+
+
+
+
+/* ||||||||||||||||||| END REGISTRA FUNÇÕES RECURSOS |||||||||||||||||||  */ ?>

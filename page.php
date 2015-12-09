@@ -7,13 +7,7 @@
 
 <?php get_header(); ?>
 
-
-
-
-
-
-
-
+ 
 <!-- |||||||||||||||||||||||| HEADER |||||||||||||||||||||||| -->
 	 <header class="strutcture-header z-2">
 	     <a href="#" class="strutcture-header__brand strutcture-header__brand--altoqi">AltoQi</a>
@@ -324,25 +318,30 @@ endif;
 
 
 
-<div id="modal-recursos" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
-  	<div class="modal__midia">
-		  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/elements/modal/midia-image.jpg" alt="">
-	</div> <!-- // modal-midia -->
-	<div class="modal__conteudo">
- 		<h2 id="modal-title" class="modal__conteudo--title">Legenda</h2>
- 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus sunt, maxime quis suscipit qui, ullam dolorem molestias repudiandae distinctio beatae. Similique porro esse hic nostrum culpa necessitatibus ratione quam.</p>
- 	</div> <!-- // modal-conteudo -->
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div>
-
-
 
 <div id="modal-modulos" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
-  	<div class="modal__midia">
-  		 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eberick-v10/modules/module3.jpg" alt="">
+
+	<div class="modal__midia">
+
+				<div class="owl-carousel-single" >
+								<div class="item">
+												  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eberick-v10/modules/module3.jpg" alt="">
+								</div>
+								<div class="item">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eberick-v10/image-fake/cor-b.jpg" />
+								 </div>
+								 <div class="item">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eberick-v10/image-fake/cor-c.jpg" />
+								 </div>
+								 <div class="item">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eberick-v10/image-fake/cor-d.jpg" />
+								 </div>
+
+				</div>
+ </div> <!-- // modal-midia -->
 
 
-	</div> <!-- // modal-midia -->
+
 	<div class="modal__conteudo">
  		<h2 id="modal-title" class="modal__conteudo--title">Legenda</h2>
  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus sunt, maxime quis suscipit qui, ullam dolorem molestias repudiandae distinctio beatae. Similique porro esse hic nostrum culpa necessitatibus ratione quam.</p>
@@ -355,5 +354,7 @@ endif;
 
 <a href="#surpreenda-se" class="scrolltop"> &#9650;</a>
 <!-- |||||||||||||||||||||| ENDMODAIS ||||||||||||||||||||||| -->
+
+
 
 <?php get_footer(); ?>
