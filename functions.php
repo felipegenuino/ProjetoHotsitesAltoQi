@@ -202,12 +202,16 @@ if ( ! function_exists( 'theme_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_register_script( 'foundation', get_template_directory_uri() . '/assets/js/foundation.min.js', array('jquery'), '5.5.2', true );
 
-	wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.carousel.css' );
-	wp_enqueue_style( 'owl-carousel-theme-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.theme.default.min.css' );
 
- 	wp_register_script( 'owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel2/owl.carousel.min.js', array('jquery'), '5.5.2', true );
+//	wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.carousel.css' );
+//	wp_enqueue_style( 'owl-carousel-theme-stylesheet', get_template_directory_uri() . '/assets/libs/owlcarousel2/assets/owl.theme.default.min.css' );
+// 	wp_register_script( 'owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel2/owl.carousel.min.js', array('jquery'), '5.5.2', true );
 
+	wp_register_script( 'owl-carousel', get_template_directory_uri() . '/assets/libs/owl-carousel/owl.carousel.min.js', array('jquery'), '5.5.2', true );
 
+	wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/assets/libs/owl-carousel/owl.carousel.css' );
+	wp_enqueue_style( 'owl-carousel-theme-stylesheet', get_template_directory_uri() . '/assets/libs/owl-carousel/owl.theme.css' );
+	wp_enqueue_style( 'owl-carousel-transitions-stylesheet', get_template_directory_uri() . '/assets/libs/owl-carousel/owl.transitions.css' );
 
 
 	wp_register_script( 'skrollr', get_template_directory_uri() . '/assets/libs/skrollr/skrollr.min.js', array('jquery'), '5.5.2', true );
@@ -407,38 +411,26 @@ function cc_mime_types($mimes) {
 add_filter('upload_mimes', 'cc_mime_types');
 
 
-?>
+
+
+
+ 
 
 
 
 
 
+  /* ||||||||||||||||||| REGISTRA FUNÇÕS DO HERO |||||||||||||||||||  */
+
+function heroBackgroundType() {
+	 $acfheroBackgroundType = get_sub_field('acf_block_hero__type_layout');
+		if( !empty( $acfheroBackgroundType) ): ?>
+		  <?php echo  $acfheroBackgroundType; ?>
+		<?php endif;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php  /* ||||||||||||||||||| REGISTRA FUNÇÕS DO HERO |||||||||||||||||||  */
-
-
-    function heroBackgroundType() {
-        if ( !empty(get_sub_field('acf_block_hero__type_layout')) )
-        {
-          echo get_sub_field('acf_block_hero__type_layout');
-        }
-        else { echo "section-dark"; }
-      } //heroBackgroundType()
 
 
 
@@ -531,11 +523,17 @@ add_filter('upload_mimes', 'cc_mime_types');
 <?php  /* ||||||||||||||||||| REGISTRA FUNÇÕS DO VIDEO |||||||||||||||||||  */
 
 
-		function blockVideoBackgroundType() {
-			if ( !empty(get_sub_field('acf_block_video__type_layout')) ) 	{
-				echo get_sub_field('acf_block_video__type_layout');
-			} else { echo "section-light"; }
-		} //heroBackgroundType()
+
+function blockVideoBackgroundType() {
+	 $acfblockVideoBackgroundType = get_sub_field('acf_block_video__type_layout');
+		if( !empty( $acfacfblockVideoBackgroundType) ): ?>
+		  <?php echo  $acfacfblockVideoBackgroundType; ?>
+		<?php endif;
+}
+
+
+
+
 
 
 
@@ -621,11 +619,17 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 <?php  /* ||||||||||||||||||| REGISTRA FUNÇÕES RECURSOS |||||||||||||||||||  */
 
+
+
+
+
 function blockResourceBackgroundType() {
-	if ( !empty(get_sub_field('acf_block_resource__type_layout')) ) 	{
-		echo get_sub_field('acf_block_resource__type_layout');
-	} else { echo "section-light"; }
+	 $acfblockResourceBackgroundType = get_sub_field('acf_block_resource__type_layout');
+		if( !empty( $acfblockResourceBackgroundType) ): ?>
+		  <?php echo  $acfblockResourceBackgroundType; ?>
+		<?php endif;
 }
+
 
 
 
