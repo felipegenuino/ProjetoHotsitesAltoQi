@@ -17,8 +17,8 @@
 
 
 		<?php wp_head(); ?>
-    
+
 		</head>
-		<body <?php body_class(); ?>>
+		<body  id="body" <?php body_class(); ?> >
 
  <main class="structure-main">

@@ -1,18 +1,10 @@
-<!-- |||||||||||||||||||||||| NOVOS RECURSOS |||||||||||||||||||||||| -->
-<section id="recursos" class="structure-main__section  <?php blockResourceBackgroundType(); ?>" <?php resourceCustomBackground(); ?>>
-	<div class="row">
-			<span class="structure-main__section--icon structure-main__section--icon-recursos"></span>
-			<div class="medium-12 columns">
-			<?php blockResourceTitle(); ?>
-			</div> <!-- //medium-12 columns-->
 
-<div class="medium-8 medium-centered columns">
+
+
+<div class="row">
+ 	<div class="medium-8 medium-centered columns">
 			<!-- ul.small-block-grid-2.medium-block-grid-3>(li>img[src="assets/img/features/img$" alt="nome-do-recurso"]{legenda})*6 -->
 			<ul class="lista-de-recursos small-block-grid-2 medium-block-grid-3">
-
-
-
-
 
 								<?php /*contadores */ $i=0;	$id=0;?>
 									<?php	if( have_rows('acf_block_resource__list_resource') ):  ?>
@@ -20,8 +12,10 @@
 							 				     	<?php  while ( have_rows('acf_block_resource__list_resource')   ) : the_row() ;  ?>
 																	<?php /*contadores */ 	$id++;?>
 
-																	<?php $i++;
-																			if( $i <= 6 ) {  ?>
+																	<?php // Se estiver clicado em listado na pagina inicial
+																			if( get_sub_field('acf_block_resource__list_resource__dastaque') == TRUE ) {  ?>
+
+
 
 																				<li class="lista-de-recursos__item">
 																							<figure class="lista-de-recursos__figure">
@@ -30,10 +24,9 @@
 																							</figure>
 
 																						<!--   inicia modal -->
-																							<div id="modal-recursos-<?php echo $id; ?>" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+																							<div id="modal-recursos-<?php echo $id; ?>" class="reveal-modal xlarge" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
 																								 <div class="modal__midia">
-																									 <?php $images = get_sub_field('acf_block_resource__list_resource__gallery');
-																									 if( $images ): ?>
+
 																											 <div  class="owl-carousel-single owl-carousel owl-theme">
 																													 <?php $acfBlockResourceListResourceVideo = get_sub_field('acf_block_resource__list_resource__video');
 																														 if( !empty($acfBlockResourceListResourceVideo) ): ?>
@@ -44,6 +37,8 @@
 																															 </div><!-- //item -->
 																														 <?php endif;  ?>
 
+																														 <?php $images = get_sub_field('acf_block_resource__list_resource__gallery');
+																														 if( $images ): ?>
 																													 <?php foreach( $images as $image ): ?>
 																															 <div class="item">
 																																	 <!-- <a href="<?php echo $image['url']; ?>"> -->
@@ -70,24 +65,10 @@
 																		<?php	} ?>
 
 
-
-
-
-
-
-
-
 														<?php  endwhile;  ?>
 
 
  						  <?php  endif;   ?>
-
-
-
-
-
-
-
 
 			</ul>
 </div> <!-- //large-8 columns-->
@@ -96,44 +77,32 @@
 				<a href="#" class="" data-reveal-id="modal-recursos-todos" >Veja todos os recursos <i class="icon icon-modal"></i></a>
 
 				<!--   inicia modal -->
-					<div id="modal-recursos-todos" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+					<div id="modal-recursos-todos" class="reveal-modal xlarge" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
 						<header class="reveal-modal-header">
 			            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 		                  <span class="brand-altoqi-small brand-altoqi-small-light"></span>
 		           </header>
 								<div class="modal__conteudo">
 	 								 <div class="medium-12 columns">
-									 	<h2 class="bloco-recursos__lista__recursos--title">Lista de Recursos</h2>
-									 	<ul class="bloco-recursos__lista__recursos--lista">
+									 	<h2 class="modal__content__title">Lista de Recursos</h2>
+									 	<ul class="modal__content__list__basic--list">
 
 
 									 				 <?php  if( have_rows('acf_block_resource__list_resource') ):  ?>
 									 					 <?php  while ( have_rows('acf_block_resource__list_resource') ) : the_row() ;  ?>
-
-									 								 <li class="bloco-recursos__lista__recursos--lista--item"><?php the_sub_field('acf_block_resource__list_resource__title'); ?> 	</li>
+									 								 <li class="modal__content__list__basic--list--item"><?php the_sub_field('acf_block_resource__list_resource__title'); ?> 	</li>
 									 					 <?php  endwhile;  ?>
 									 			 <?php  endif; ?>
 									 	</ul>
 									 </div><!-- //small-12 columns -->
-
-
-
 								</div> <!-- // modal-conteudo -->
  					</div> <!-- //fecha modal modal -->
+ 			</div> <!-- //small-12 columns-->
+
+	</div> <!-- //row -->
 
 
-
-
-			</div> <!-- //small-12 columns-->
-
-	</div> <!-- //columns -->
-</section> <!-- //  -->
-<!-- |||||||||||||||||||||| ENDNOVOS RECURSOS ||||||||||||||||||||||| -->
-
-
-
-
-
+<?php /* ?>
 <ol class="debug" style="display:_none">
 	<li> <em> acf_block_resource__title :</em> <?php the_sub_field('acf_block_resource__title'); ?>  </li>
   <li> <em> acf_block_resource__helpline :</em> <?php the_sub_field('acf_block_resource__helpline'); ?>  </li>
@@ -201,9 +170,8 @@ if( $images ): ?>
 
   endif;   ?>
 
-<br>
-<hr>
-<br>
 
   </li>
 </ol>
+
+<?php */ ?>

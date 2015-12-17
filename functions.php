@@ -1,5 +1,20 @@
 <?php
 
+//shortcode_button
+	function shortcode_button($atts, $content = null) {
+	 extract( shortcode_atts( array(
+	          'url' => '#',
+	          'color' => ''
+	), $atts ) );
+	return '<a href="'.$url.'" class="section__button section__button--'.$color.' "><span>' . do_shortcode($content) . '</span></a>';
+	}
+	add_shortcode('button', 'shortcode_button');
+//end shortcode_button
+
+
+
+
+
 
 //options page
 if( function_exists('acf_add_options_page') ) {
@@ -414,92 +429,6 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 
 
- 
-
-
-
-
-
-  /* ||||||||||||||||||| REGISTRA FUNÇÕS DO HERO |||||||||||||||||||  */
-
-function heroBackgroundType() {
-	 $acfheroBackgroundType = get_sub_field('acf_block_hero__type_layout');
-		if( !empty( $acfheroBackgroundType) ): ?>
-		  <?php echo  $acfheroBackgroundType; ?>
-		<?php endif;
-}
-
-
-
-
-
-
-
-
-    function brandProduct($classDaImagem = " ") {
-      $acfBlockHeroBrandProduct = get_sub_field('acf_block_hero__brand_product');
-          if( !empty($acfBlockHeroBrandProduct) ): ?>
-             <img class="<?php echo $classDaImagem; ?>" src="<?php echo $acfBlockHeroBrandProduct['url']; ?>" alt="<?php echo $acfBlockHeroBrandProduct['alt']; ?>" />
-         <?php  endif;
-
-         if( empty($acfBlockHeroBrandProduct) ): ?>
-            <span class="brand-default"></span>
-        <?php endif;
-
-        //brandProduct("classe css da imagem") / brandProduct("section__image")
-    }
-
-
-
-    function heroTitle() {
-      $acfBlockHeroTitle = get_sub_field('acf_block_hero__title');
-        if( !empty($acfBlockHeroTitle) ): ?>
-        <h1 class="section__title">  <?php echo $acfBlockHeroTitle; ?>  </h1>
-        <?php endif;
-    }
-
-
-
-
-
-     function heroSubTitle() {
-      $acfBlockHeroSubtitle = get_sub_field('acf_block_hero__helpline');
-        if( !empty($acfBlockHeroSubtitle) ): ?>
-          <p class="lead"> <?php echo $acfBlockHeroSubtitle; ?>  </p>
-        <?php endif;
-     }
-
-
-
-
-    function heroButton() {
-			$acfBlockHeroButtonLink = get_sub_field('acf_block_hero__button_link');
-      $acfBlockHeroButtonText = get_sub_field('acf_block_hero__button_text');
-
-       if( !empty($acfBlockHeroButtonLink) ): ?>
-			 <a href="<?php echo $acfBlockHeroButtonLink; ?>" class="section__button"><?php echo $acfBlockHeroButtonText; ?></a>
-       <?php endif;
-    }
-
-
-
-		function heroCustomBackground() {
-
-			$acfBlockHeroCustomBackground = get_sub_field('acf_block_hero__custom_background');
-			$acfBlockHeroCustomBackgroundColor = get_sub_field('acf_block_hero__custom_background_color');
-      $acfBlockHeroCustomBackgroundImage = get_sub_field('acf_block_hero__custom_background_image');
-
-       if( !empty($acfBlockHeroCustomBackground) ): ?>
-			 		style="background: <?php echo $acfBlockHeroCustomBackgroundColor; ?> url(<?php echo $acfBlockHeroCustomBackgroundImage; ?>) ; "
-       <?php endif;
-    }
-
-
-
-
-
-
-/* ||||||||||||||||||| END REGISTRA FUNÇÕS DO HERO |||||||||||||||||||  */
 ?>
 
 
@@ -530,10 +459,6 @@ function blockVideoBackgroundType() {
 		  <?php echo  $acfacfblockVideoBackgroundType; ?>
 		<?php endif;
 }
-
-
-
-
 
 
 

@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 
- 
+
 <!-- |||||||||||||||||||||||| HEADER |||||||||||||||||||||||| -->
 	 <header class="strutcture-header z-2">
 	     <a href="#" class="strutcture-header__brand strutcture-header__brand--altoqi">AltoQi</a>
@@ -41,9 +41,10 @@ if( have_rows('acf_flexible_content_blocks') ):
 
      // loop through the rows of data
     while ( have_rows('acf_flexible_content_blocks') ) : the_row();
-            if( get_row_layout() == 'bloco_hero' ):   		get_template_part( 'parts/block-hero' );
-      	elseif( get_row_layout() == 'bloco_video' ): 		  get_template_part( 'parts/block-video' );
-			  elseif( get_row_layout() == 'bloco_recursos' ): 	get_template_part( 'parts/block-resourses' );
+            if( get_row_layout() == 'bloco_generico' ): 	get_template_part( 'parts/block-generic' );
+      	       //elseif(   );
+			        //  elseif( get_row_layout() == 'bloco_recursos' ): 	get_template_part( 'parts/block-resourses' );
+              //  elseif( get_row_layout() == 'bloco_recursos' ): 	get_template_part( 'parts/block-resourses' );
         endif;
 
 
@@ -58,7 +59,7 @@ endif;
 
 
 
-
+<?php /* ?>
 
 
 
@@ -349,10 +350,10 @@ endif;
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
+<?php */ ?>
 
 
-
-<a href="#surpreenda-se" class="scrolltop"> &#9650;</a>
+<a href="#body" class="scrolltop"> &#9650;</a>
 <!-- |||||||||||||||||||||| ENDMODAIS ||||||||||||||||||||||| -->
 
 
