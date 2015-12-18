@@ -1,0 +1,18 @@
+[nome-do-cliente] <design@felipegenuino.com>
+
+
+Reply-To: [email-do-cliente]
+
+
+De: [nome-do-cliente] <[your-email]>
+Assunto: Lista de espera Eberick V9: [nome-do-cliente] 
+
+Corpo da mensagem:
+[_title]
+[nome-do-cliente] 
+[email-do-cliente]
+[DDDTelefone]
+[DDDCelular]
+
+--
+Este e-mail foi enviado de um formulário de contato em Hotsites AltoQi (//192.168.10.197:3000/hotsite)

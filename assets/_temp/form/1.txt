@@ -1,0 +1,26 @@
+<div class="name-field">
+	<label class="formulario__label">Seu Nome <small class="formulario__label--obrigatorio">obrigatório</small> 
+	[text* nome-do-cliente class:formulario__input placeholder"Seu nome"]</label> 
+</div>
+
+<div class="email-field"> <label class="formulario__label">E-mail   <small class="formulario__label--obrigatorio">obrigatório</small>  
+	[email* email-do-cliente class:formulario__input placeholder"Seu e-mail"] </label> 
+</div>
+ 
+<div class="row">
+<div class="large-6 columns">
+    <div class="name-field">
+	    <label class="formulario__label">DDD + Telefone
+		    	 [tel* DDDTelefone class:formulario__input placeholder "(48) 9999-9999"]
+	    </label>
+		</div>
+</div>
+<div class="large-6 columns">
+    <div class="name-field">
+	    <label class="formulario__label">DDD + Celular
+		    	 [tel* DDDCelular class:formulario__input placeholder "(48) 9999-9999"]
+	    </label>
+		</div>
+</div>
+</div>
+[submit class:section__button "Enviar"]

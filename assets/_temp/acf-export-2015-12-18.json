@@ -1,0 +1,1311 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+[
+    {
+        "key": "group_56609b92defe9",
+        "title": "Blocos #template 1",
+        "fields": [
+            {
+                "key": "field_56609badb1b82",
+                "label": "Criador de blocos",
+                "name": "acf_flexible_content_blocks",
+                "type": "flexible_content",
+                "instructions": "Monte seu layout ",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Adicionar Bloco",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "56609d6926b5c",
+                        "name": "bloco_generico",
+                        "label": "Bloco de conteudo",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5672c42685c28",
+                                "label": "Sobre esse bloco",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_5671b60ae0fa0",
+                                "label": "Nome do Bloco",
+                                "name": "acf_block_generic__blockname",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5672c44985c29",
+                                "label": "Escolha uma fun\u00e7\u00e3o especial para seu bloco",
+                                "name": "acf_block_generic__newblock_question_have",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 30,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "escolha-bloco-simples": "Bloco Simples",
+                                    "escolha-bloco-video": "Bloco com V\u00eddeo",
+                                    "escolha-bloco-recursos": "Bloco com Recursos",
+                                    "escolha-bloco-modulos": "Bloco com M\u00f3dulos",
+                                    "escolha-bloco-rodape": "Bloco R\u00f3dap\u00e9"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "vertical"
+                            },
+                            {
+                                "key": "field_5672db94cb83f",
+                                "label": "Sobre o bloco simples",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-simples"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 70,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "<h1>Sobre o bloco simples<\/h1>\r\n  \r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p>",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_5672d99d436f6",
+                                "label": "Sobre o bloco video",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-video"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 70,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "<h1>Sobre o bloco Video<\/h1>\r\n  \r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p>",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_5672dbabcb840",
+                                "label": "Sobre o bloco recursos",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-recursos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 70,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "<h1>Sobre o bloco Recursos<\/h1>\r\n  \r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p>",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_567336168171d",
+                                "label": "Sobre o bloco modulos",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-modulos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 70,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "<h1>Sobre o bloco M\u00f3dulos<\/h1>\r\n  \r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p>",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_5674138aa26c9",
+                                "label": "Sobre o bloco footer",
+                                "name": "",
+                                "type": "message",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-footer"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 70,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "<h1>Sobre o bloco Footer<\/h1>\r\n  \r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p>",
+                                "esc_html": 0
+                            },
+                            {
+                                "key": "field_5665b9feeb921",
+                                "label": "Conteudo",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-simples"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-video"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-recursos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-modulos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_56609dd2b1b85",
+                                "label": "Conteudo",
+                                "name": "acf_block_generic__content",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 1
+                            },
+                            {
+                                "key": "field_5665b9deeb920",
+                                "label": "Configurar Layout",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_5660a2e070914",
+                                "label": "Tipo de layout",
+                                "name": "acf_block_generic__type_layout",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "section-dark": "Fundo escuro",
+                                    "section-light": "Fundo claro"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "section-dark",
+                                "layout": "horizontal"
+                            },
+                            {
+                                "key": "field_5660b34810858",
+                                "label": "Deseja customizar o background do bloco?",
+                                "name": "acf_block_generic__custom_background",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 100,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "Customizar Background?",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "background-do-bloco-imagem",
+                                "label": "Background do bloco : Imagem",
+                                "name": "acf_block_generic__custom_background_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5660b34810858",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "full",
+                                "library": "uploadedTo",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ".jpg, .png"
+                            },
+                            {
+                                "key": "field_5660b14194d12",
+                                "label": "Background do bloco : Cor",
+                                "name": "acf_block_generic__custom_background_color",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5660b34810858",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": ""
+                            },
+                            {
+                                "key": "field_5671b9aaf0d19",
+                                "label": "Vai ter \u00edcone?",
+                                "name": "acf_block_generic__icon_question_have",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "field_5671bcc4f5f4c",
+                                "label": "Icone",
+                                "name": "acf_block_generic__icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5671b9aaf0d19",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5665c6e99cbd1",
+                                "label": "Configurar Menu",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-simples"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-video"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-recursos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-modulos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_5660b4d50eca2",
+                                "label": "Adicionar ao menu?",
+                                "name": "acf_block_generic__menu_question_have",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 100,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "Adicionar esse bloco ao menu superior?",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "field_5660b22d0a6fe",
+                                "label": "Menu: ID",
+                                "name": "acf_block_generic__id",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5660b4d50eca2",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5660b1ee0a6fd",
+                                "label": "Menu: Nome",
+                                "name": "acf_block_generic__menu_name",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5660b4d50eca2",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5660b84d75924",
+                                "label": "Menu: icone",
+                                "name": "acf_block_generic__menu_icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5660b4d50eca2",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5665cff944ab2",
+                                "label": "Conte\u00fado Video",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-video"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_5665d12e44ab3",
+                                "label": "Notebook: Legenda",
+                                "name": "acf_block_video__image_legend",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Duis aute irure dolor in reprehenderit <strong> in voluptate velit esse<\/strong>",
+                                "placeholder": "Ficou curioso para conhecer as novidades? <strong>Confira o que mudou!<\/strong>",
+                                "maxlength": "",
+                                "rows": 3,
+                                "new_lines": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5660b2e069121",
+                                "label": "Notebook: Miniatura",
+                                "name": "acf_block_video__image_thumb",
+                                "type": "image",
+                                "instructions": "Imagem que est\u00e1 dentro do notebook",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "full",
+                                "library": "all",
+                                "min_width": 800,
+                                "min_height": 484,
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ".jpg, .png"
+                            },
+                            {
+                                "key": "field_5660b26a6911d",
+                                "label": "Video: link",
+                                "name": "acf_block_video__video_link",
+                                "type": "oembed",
+                                "instructions": "S\u00f3 colocar o link do video:\r\nhttps:\/\/www.youtube.com\/watch?v=IKaUJEidIUY \r\n<br>\r\nhttps:\/\/vimeo.com\/112818814",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "width": "",
+                                "height": ""
+                            },
+                            {
+                                "key": "field_5665ecda53f91",
+                                "label": "V\u00eddeo: T\u00edtulo",
+                                "name": "acf_block_video__video_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "T\u00edtulo do V\u00eddeo",
+                                "placeholder": "T\u00edtulo do V\u00eddeo",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5665ecee53f92",
+                                "label": "V\u00eddeo: description",
+                                "name": "acf_block_video__video_description",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus sunt, maxime quis suscipit qui, ullam dolorem molestias repudiandae distinctio beatae. Similique porro esse hic nostrum culpa necessitatibus ratione quam.",
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 0
+                            },
+                            {
+                                "key": "field_56670e1f52105",
+                                "label": "Novos M\u00f3dulos",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-modulos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_56730f14dd114",
+                                "label": "Adicionar novo m\u00f3dulo",
+                                "name": "acf_block_module__list_modules",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "layout": "row",
+                                "button_label": "Adicionar novo recurso",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_56730f14dd115",
+                                        "label": "Recurso: T\u00edtulo",
+                                        "name": "acf_block_module__list_module__title",
+                                        "type": "textarea",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "maxlength": "",
+                                        "rows": 2,
+                                        "new_lines": "br",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    },
+                                    {
+                                        "key": "field_56730f14dd116",
+                                        "label": "Recurso: destaque?",
+                                        "name": "acf_block_module__list_module__dastaque",
+                                        "type": "true_false",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "message": "Mostrar na tela principal?",
+                                        "default_value": 0
+                                    },
+                                    {
+                                        "key": "field_56730f14dd117",
+                                        "label": "Recurso: miniatura",
+                                        "name": "acf_block_module__list_module__thumb",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56730f14dd116",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "url",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ".jpg, .png, .svg"
+                                    },
+                                    {
+                                        "key": "field_56730f14dd118",
+                                        "label": "Recurso: descri\u00e7\u00e3o",
+                                        "name": "acf_block_module__list_module__description",
+                                        "type": "wysiwyg",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56730f14dd116",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus sunt, maxime quis suscipit qui, ullam dolorem molestias repudiandae distinctio beatae. Similique porro esse hic nostrum culpa necessitatibus ratione quam.",
+                                        "tabs": "all",
+                                        "toolbar": "basic",
+                                        "media_upload": 0
+                                    },
+                                    {
+                                        "key": "field_56730f14dd119",
+                                        "label": "Recurso: galeria",
+                                        "name": "acf_block_module__list_module__gallery",
+                                        "type": "gallery",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56730f14dd116",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "min": "",
+                                        "max": "",
+                                        "preview_size": "full",
+                                        "library": "uploadedTo",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_56730f14dd11a",
+                                        "label": "Recurso: video",
+                                        "name": "acf_block_module__list_module__video",
+                                        "type": "oembed",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56730f14dd116",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "width": "",
+                                        "height": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_56730ebcec61c",
+                                "label": "Novos Recursos",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-recursos"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_56670e4b52106",
+                                "label": "Adicionar Novo Recurso",
+                                "name": "acf_block_resource__list_resource",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "layout": "row",
+                                "button_label": "Adicionar novo recurso",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_56670e6952107",
+                                        "label": "Recurso: T\u00edtulo",
+                                        "name": "acf_block_resource__list_resource__title",
+                                        "type": "textarea",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "maxlength": "",
+                                        "rows": 2,
+                                        "new_lines": "br",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    },
+                                    {
+                                        "key": "field_566b1f6f112a0",
+                                        "label": "Recurso: destaque?",
+                                        "name": "acf_block_resource__list_resource__dastaque",
+                                        "type": "true_false",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "message": "Mostrar na tela principal?",
+                                        "default_value": 0
+                                    },
+                                    {
+                                        "key": "field_56670e8b52108",
+                                        "label": "Recurso: miniatura",
+                                        "name": "acf_block_resource__list_resource__thumb",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_566b1f6f112a0",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "url",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ".jpg, .png, .svg"
+                                    },
+                                    {
+                                        "key": "field_56670efc52109",
+                                        "label": "Recurso: descri\u00e7\u00e3o",
+                                        "name": "acf_block_resource__list_resource__description",
+                                        "type": "wysiwyg",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_566b1f6f112a0",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus sunt, maxime quis suscipit qui, ullam dolorem molestias repudiandae distinctio beatae. Similique porro esse hic nostrum culpa necessitatibus ratione quam.",
+                                        "tabs": "all",
+                                        "toolbar": "basic",
+                                        "media_upload": 0
+                                    },
+                                    {
+                                        "key": "field_56670f355210a",
+                                        "label": "Recurso: galeria",
+                                        "name": "acf_block_resource__list_resource__gallery",
+                                        "type": "gallery",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_566b1f6f112a0",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "min": "",
+                                        "max": "",
+                                        "preview_size": "full",
+                                        "library": "uploadedTo",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_56670f5c5210b",
+                                        "label": "Recurso: video",
+                                        "name": "acf_block_resource__list_resource__video",
+                                        "type": "oembed",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_566b1f6f112a0",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "width": "",
+                                        "height": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_56741442fef9f",
+                                "label": "Configurar Rodap\u00e9",
+                                "name": "",
+                                "type": "tab",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5672c44985c29",
+                                            "operator": "==",
+                                            "value": "escolha-bloco-rodape"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "placement": "left"
+                            },
+                            {
+                                "key": "field_56741640a58d2",
+                                "label": "Rodap\u00e9: Logotipo",
+                                "name": "acf_block_footer__brand",
+                                "type": "image",
+                                "instructions": "Por padr\u00e3o ficar\u00e1 o logotipo da AltoQi, caso queira alterar use esse campo.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "uploadedTo",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ".svg, .png"
+                            },
+                            {
+                                "key": "field_56743dcc6c49b",
+                                "label": "Rodap\u00e9: Logotipo [Largura]",
+                                "name": "acf_block_footer__brand_with",
+                                "type": "number",
+                                "instructions": "Por padr\u00e3o ficar\u00e1 o logotipo da AltoQi, caso queira alterar use esse campo.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "px",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_567445ad2a707",
+                                "label": "Rodap\u00e9: Habilitar links",
+                                "name": "acf_block_footer__have_links",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "Vai ter links no rodap\u00e9",
+                                "default_value": 0
+                            },
+                            {
+                                "key": "field_567416ffa58d9",
+                                "label": "Rodap\u00e9: Links",
+                                "name": "acf_block_footer__repeater_link",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_567445ad2a707",
+                                            "operator": "==",
+                                            "value": "1"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "layout": "table",
+                                "button_label": "Adicionar Linha",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_56741787a58da",
+                                        "label": "Nome do link",
+                                        "name": "acf_block_footer__repeater_link_item_name",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": "",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    },
+                                    {
+                                        "key": "field_5674182ba58db",
+                                        "label": "Endere\u00e7o do link",
+                                        "name": "acf_block_footer__repeater_link_item_address",
+                                        "type": "url",
+                                        "instructions": "N\u00e3o esque\u00e7a do http:\/\/",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": 50,
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "http:\/\/altoqi.com.br"
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "56746dd704679",
+                        "name": "bloco_header",
+                        "label": "Header",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags"
+        ]
+    }
+]
