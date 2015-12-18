@@ -1,6 +1,3 @@
-
-
-
 <div class="row">
  	<div class="medium-12 columns">
 			<!-- ul.small-block-grid-2.medium-block-grid-3>(li>img[src="assets/img/features/img$" alt="nome-do-recurso"]{legenda})*6 -->
@@ -74,7 +71,7 @@
 </div> <!-- //large-8 columns-->
 
 			<div class="small-12 columns">
-				<a href="#" class="" data-reveal-id="modal-modulos-todos" >Veja todos os Recursos <i class="icon icon-modal"></i></a>
+				<a href="#" class="" data-reveal-id="modal-modulos-todos" >Veja todos os Módulos <i class="icon icon-modal"></i></a>
 
 				<!--   inicia modal -->
 					<div id="modal-modulos-todos" class="reveal-modal xlarge" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
@@ -101,77 +98,4 @@
 
 	</div> <!-- //row -->
 
-
-<?php /* ?>
-<ol class="debug" style="display:_none">
-	<li> <em> acf_block_module__title :</em> <?php the_sub_field('acf_block_module__title'); ?>  </li>
-  <li> <em> acf_block_module__helpline :</em> <?php the_sub_field('acf_block_module__helpline'); ?>  </li>
-  <li> <em> acf_block_module__type_layout :</em> <?php the_sub_field('acf_block_module__type_layout'); ?>  </li>
-  <li> <em> acf_block_module__custom_background :</em> <?php the_sub_field('acf_block_module__custom_background'); ?>  </li>
-  <li> <em> acf_block_module__custom_background_image :</em> <?php the_sub_field('acf_block_module__custom_background_image'); ?>  </li>
-  <li> <em> acf_block_module__custom_background_color :</em> <?php the_sub_field('acf_block_module__custom_background_color'); ?>  </li>
-  <li> <em> acf_block_module__list_module :</em>
-
-
-  <?php
-
-  // check if the repeater field has rows of data
-  if( have_rows('acf_block_module__list_module') ):
-   	// loop through the rows of data
-      while ( have_rows('acf_block_module__list_module') ) : the_row();   ?>
-        <?php // display a sub field value ?>
-
-<ol>
-<li> <em>acf_block_module__list_module__title:  </em> <?php the_sub_field('acf_block_module__list_module__title');   ?> </li>
-<li> <em>acf_block_module__list_module__thumb:  </em> <?php the_sub_field('acf_block_module__list_module__thumb'); ?> </li>
-<li> <em>acf_block_module__list_module__description:  </em> <?php the_sub_field('acf_block_module__list_module__description');?>
-<li>
-
-<?php $images = get_sub_field('acf_block_module__list_module__gallery');
-
-if( $images ): ?>
-    <div  class="owl-carousel-single" style="width: 600px">
-
-
-				<?php  if( !empty(get_sub_field('acf_block_module__list_module__video') ) ): ?>
-							<div class="item">
-										<div class="flex-video widescreen vimeo">
-											 <?php the_sub_field('acf_block_module__list_module__video');   ?>
-										</div> <!-- //flex-video -->
-								</div><!-- //item -->
-				<?php endif;  ?>
-
-
-        <?php foreach( $images as $image ): ?>
-
-
-            <div class="item">
-                <!-- <a href="<?php echo $image['url']; ?>"> -->
-                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-                <!-- </a> -->
-                <p class="owl-carousel-caption"><?php echo $image['caption']; ?></p>
-            </div>
-
-
-
-        <?php endforeach; ?>
-    </div>
-<?php endif; ?>
-<li>
-
-<li> <em>acf_block_module__list_module__video:  </em> <?php the_sub_field('acf_block_module__list_module__video');   ?> </li>
-</ol>
-
-    <?php  endwhile;
-
-  else :
-
-      // no rows found
-
-  endif;   ?>
-
-
-  </li>
-</ol>
-
-<?php */ ?>
+ 

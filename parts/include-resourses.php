@@ -1,6 +1,3 @@
-
-
-
 <div class="row">
  	<div class="medium-8 medium-centered columns">
 			<!-- ul.small-block-grid-2.medium-block-grid-3>(li>img[src="assets/img/features/img$" alt="nome-do-recurso"]{legenda})*6 -->

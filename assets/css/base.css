@@ -81,7 +81,8 @@ figure { margin: 0;}
     .strutcture-header__list { float: right; display: block; list-style: none; margin: 0; padding: 0; }
     .strutcture-header__list--item {display: inline-block;text-align: left; float: left; width: 100%;}
     .strutcture-header__list--item-link{ padding: 0px 10px; color: #000; font-weight: 400; font-size: 14px; }
-    .strutcture-header__list--item-link-icon{ width: 16px;   height: 16px; display: inline-block; vertical-align: middle; }
+    .strutcture-header__list--item-link-icon{   }
+    .strutcture-header__list--item-link-icon img{vertical-align: middle; width: 16px;     display: inline-block;}
     .strutcture-header__list--item-link-icon{ background-repeat: no-repeat; background-position: center center; background-size: cover; }
     .strutcture-header__list--item-link-icon.icon-modulos-lite{background-image: url("../img/elements/icons/ico-star.png");}
     .strutcture-header__list--item-link-icon.icon-recursos-lite{background-image: url("../img/elements/icons/ico-recursos.png");}
@@ -277,23 +278,38 @@ button:hover:after, .section__button:hover:after { left: -15px; right: -15px; tr
 
 
 /* |||||||||||||||||||||||| FOOTER |||||||||||||||||||||||| */
+.section-footer{padding: 0}
+.section-video {    padding-bottom: 0;}
+
+.section-light{}
+.section-dark{}
+
 
 .footer-top,
 .footer-bottom{  display: inline-block; float: left; width: 100%; padding: 50px 20px;}
 
-.brand-altoqi__footer-light * { fill: #fff; float: left;  display: inline-block; width: 100%; }
-.brand-altoqi__footer { width: 100%; height: auto; }
+.section-light .brand-altoqi__footer * { fill:#414345; }
+.section-dark  .brand-altoqi__footer * { fill: #fff;  }
+               .brand-altoqi__footer * {float: left;  display: inline-block; width: 100%;}
+
+              .brand-altoqi__footer { width: 100%; height: auto; }
+
+
+.section-light .footer-bottom { border-top: 1px solid #E8E8E8; }
+.section-dark  .footer-bottom { border-top: 1px solid #333;  }
+               .footer-bottom{ padding: 20px}
 
 .container-brand-altoqi { display: inline-block; width: 190px; }
-
-.footer-bottom { border-top: 1px solid #333; padding: 20px }
 
 .footer-contact{ line-height: 1.3;  margin-bottom: 10px; opacity: 0.4; font-size: 14px;}
 .footer-address{ line-height: 1.3;  margin-bottom: 10px; opacity: 0.4; font-size: 12px;}
 
 .footer-nav__list{   margin: 0; display: inline-block; list-style: none; width: 100%; margin-top: 20px; }
 .footer-nav__list-item{     display: inline-block;    line-height: 1;  }
-.footer-nav__list-item--links { transition: all 0.5s; opacity: 0.4; padding: 5px 10px; display: inline-block;}
+.section-dark .footer-nav__list-item--links {opacity: 0.4; }
+.section-light .footer-nav__list-item--links {opacity: 0.7;  color: #000; }
+
+.footer-nav__list-item--links { transition: all 0.5s;  padding: 5px 10px; display: inline-block;}
 .footer-nav__list-item--links:hover{opacity: 1;}
 
 @media only screen and (max-width: 40em) {
@@ -303,17 +319,21 @@ button:hover:after, .section__button:hover:after { left: -15px; right: -15px; tr
     padding: 10px 20px;
     display: inline-block;
     background: #fff;
-    color: #000 !important;
     width: 70%;
     border-radius: 3px;
     }
+
+    .section-light .footer-nav__list-item--links {  color: #000 !important;  opacity: 0.7; }
+    .section-dark .footer-nav__list-item--links {  color: #fff !important;}
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 
 
 
 
-.footer-nav__social-media{ list-style: none;    margin: 0; display: inline-block;}
+
+
+.footer-nav__social-media{ list-style: none;    margin: 0; display: block;}
 .footer-nav__social-media-item{display: inline-block; margin: 0 5px;}
 .footer-nav__social-media-item--links{}
 
@@ -330,10 +350,13 @@ button:hover:after, .section__button:hover:after { left: -15px; right: -15px; tr
  }
  .social-media-icon:hover{opacity: 1}
 
-.social-media-facebook{  background-image: url("../img/elements/icons/social_facebook.svg"); }
-.social-media-youtube{ background-image: url("../img/elements/icons/social_youtube.svg"); }
-.social-media-twitter{ background-image: url("../img/elements/icons/social_twitter.svg"); }
+.section-light .social-media-facebook{  background-image: url("../img/elements/icons/social_facebook_dark.svg"); }
+.section-light .social-media-youtube{ background-image: url("../img/elements/icons/social_youtube_dark.svg"); }
+.section-light .social-media-twitter{ background-image: url("../img/elements/icons/social_twitter_dark.svg"); }
 
+.section-dark .social-media-facebook{  background-image: url("../img/elements/icons/social_facebook_light.svg"); }
+.section-dark .social-media-youtube{ background-image: url("../img/elements/icons/social_youtube_light.svg"); }
+.section-dark .social-media-twitter{ background-image: url("../img/elements/icons/social_twitter_light.svg"); }
 /* |||||||||||||||||||||||| ENDFOOTER ||||||||||||||||||||| */
 
 
